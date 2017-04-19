@@ -33,12 +33,63 @@ public class Main_Class {
 		String s3 = "hello";
 		
 		if (s1 == s2){
-		System.out.println("Equal");
+		System.out.println("Equal1");
 		}
 		
 		if (s1 == s3){
-			System.out.println("Equal");
+			System.out.println("Equal2");
 		}
+		
+		if (s1.equals(s2)){
+			System.out.println("Equal3");
+			}
+		
+		if (s1.equalsIgnoreCase(s3)){
+			System.out.println("Equal4");
+			}
+		
+		
+		String s4 = new String("Hello");
+		String s5 = new String("Hello");
+		
+		if (s4 == s5){
+			System.out.println("Equal5");
+			}
+		
+
+		if (s4.equals(s5)){
+			System.out.println("Equal6");
+			}
+		if (s4.equals(s1)){
+			System.out.println("Equal7");
+			}
+		
+		if (s4 == s1){
+			System.out.println("Equal8");
+			}
+		String sentence = "How are you";
+		
+		String findChar = "ow";
+		
+		int index = sentence.indexOf(findChar);
+		
+		
+		System.out.println("Index Value " + index);
+		
+		if (index != -1){
+			System.out.println("Found");
+		}
+		
+		else {
+			System.out.println("Not Found");
+		}
+		
+		
+		String result = index == -1? "Found":"Not Found";
+		
+		System.out.println(result);
+		
+		
 		
 		}
 }
